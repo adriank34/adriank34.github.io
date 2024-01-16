@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="sortcut icon" href="https://adriank34.github.io/Zadania/logo_nashortcut.PNG">
+<title>główny Adrian Jakubek</title>
+<script>
+    window.onload = function() {
+        if (localStorage.getItem('visitCount')) {
+            var count = parseInt(localStorage.getItem('visitCount')) + 1;
+            localStorage.setItem('visitCount', count);
+        } else {
+            localStorage.setItem('visitCount', 24);
+        }
+
+        updateCounter();
+    };
+    function updateCounter() {
+        var count = localStorage.getItem('visitCount');
+        document.getElementById('counter').innerHTML = 'Liczba odwiedzeń: ' + count;
+    }
+</script>
+</head>
+<body bgcolor="white">
+<table width=80% border="2" align="center">
+  <tr>
+    <td colspan="4" align="center">
+        <iframe width=800 height=450 name="logo_jakubek" src="https://adriank34.github.io/Zadania/logo_jako_gut.PNG" border="0"></iframe>
+
+    </td>
+</tr>
+<tr>
+<td width=18% align="center">
+<p align="center"> <font color="black" size="3" face="Arial"> lewe menu </font> </p> <br>
+    <p id="counter">Licznik odwiedzeń: 0</p>
+<br>
+<li>
+<a href="http://www.kuratorium.gda.pl" target="strony">Kuratorium</a>
+</li>
+<li>
+<a href="https://zse.edu.gdansk.pl/pl" target="strony">ZSE Gdańsk</a>
+</li>
+<li>
+</li>
+<li>
+<a href="https://adriank34.github.io/Zadania/plik_g%C5%82owny_jakubek.html" target="strony">powrot</a>
+</li>
+</td>
+<td align=center><iframe scrolling="no" width=650 height=800 name="strony" src="https://adriank34.github.io/Zadania/plik_g%C5%82owny_jakubek.html" border="0"></iframe>
+</td>
+<td width=18% align="center"><a href="https://adriank34.github.io/Zadania/plik_g%C5%82owny_jakubek.html" target="strony">prawe menu<br></a>
+    
+    <map id="Mapa_Jakubek">
+      <area shape="circle" coords="50,45,28" href="https://adriank34.github.io/Zadania/plik_jakubek.html" target="obszar_glowny">
+      <area shape="rect" coords="15,84,87,127" href="https://adriank34.github.io/Zadania/tabela_jakubek_html.html" target="obszar_glowny">
+      <area shape="circle" coords="49,169,27" href="https://adriank34.github.io/Zadania/formularz_jakubek.html" target="obszar_glowny">
+      <area shape="rect" coords="13,203,91,240" href="https://adriank34.github.io/Zadania/poczta_jakubka.html" target="obszar_glowny">
+      <area shape="poly" coords="54,254,23,283,86,290" href="https://adriank34.github.io/Zadania/" target="obszar_glowny">
+     </map>
+      <img src="https://adriank34.github.io/Zadania/Mapa_Jakubek.gif" alt="tutaj wybieraj linki" usemap="#Mapa_Jakubek">
+
+</td>
+</tr>
+<tr>
+  <td colspan="4" align="center">
+      <iframe scrolling="no" width=900 height=90 name="obszar_stopka" src="https://adriank34.github.io/Zadania/stopka_jakubek.html" border="1"></iframe>
+
+
+  </td>
+</tr>
+</table>
+<script>
+    updateCounter();
+</script>
+</body>
+</html>
